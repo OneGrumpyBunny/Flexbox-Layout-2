@@ -1,0 +1,136 @@
+body {
+  font-family: 'helvetica';
+  margin:0;
+  background-color: #fff;
+  display: flex;
+}
+
+header {
+  background-image: url(https://www.parisschoolofeconomics.eu/local/cache-vignettes/L690xH300/industrial-organization-2017-50dc9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, footer, section > *, nav {
+  box-shadow: 2px 2px 8px #404040;
+  
+}
+
+nav {
+    display: flex;
+    flex: 1 1 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+}
+
+nav, header, footer, section > * {
+  margin: 10px;
+  padding: 10px;
+}
+
+a {
+  text-decoration:none;
+  color: #486d7b;
+  margin: 3px;
+  padding: 5px;
+  font-size: 80%;
+}
+
+.nava {
+  display:flex;
+  flex-direction: column;
+}
+
+.nava > a:hover {
+  color: #aaa;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: stretch;
+}
+
+header {
+  background-color: #000;
+  flex: 0 0 40%;
+  text-align:center;
+  display: flex;  
+  align-items: flex-end;
+}
+
+h1 {
+    color: #000;
+    padding: 12px;
+    /* top: 270px; */
+    background: #fff;
+    opacity: .8;
+    flex: 1 1 100%;
+    font-size: 51px;
+}
+
+nav img, header img {
+  width: 100%;
+}
+footer {
+    background-color: #486d7b;
+    flex: 0 0 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > a {
+  color: #aaa;
+}
+
+footer > a:hover {
+  color: #404040;
+}
+main {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+section {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+aside {
+    background-color: #91c5db;
+    flex: 1 1 20%;
+}
+article {
+    flex: 1 1 70%;
+    background-color: white;
+}
+
+@media all and (max-width:640px) {
+  
+  body {
+    flex-direction: column;   
+  }
+nav {
+    flex: 1 1 10%;
+    flex-direction: row;
+}
+
+nav img {
+    display:none;
+}
+
+header {
+    flex: 1 1 37%;
+}
+
+nav, header, footer, section > * {
+    margin: 5px;
+    padding: 5px;
+}
+  h1 {
+    font-size: 31px;
+  }
+}
